@@ -42,7 +42,7 @@ before_install:
   - $HOME/islandora/tests/scripts/travis_setup.sh
   - cd $HOME/drupal-*
   - ln -s $TRAVIS_BUILD_DIR sites/all/modules/islandora_openseadragon
-  - ln -s $HOME/openseadragon sites/all/libraries/openseadragon
+  - ln -s $HOME/openseadragon-bin-2.2.1 sites/all/libraries/openseadragon
   - ln -s $HOME/islandora_paged_content sites/all/modules/islandora_paged_content
   - drush en --yes islandora_openseadragon
  # Mysql might time out for long tests, increase the wait timeout.
